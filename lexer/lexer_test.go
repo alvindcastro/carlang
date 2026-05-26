@@ -9,8 +9,10 @@ import (
 func TestNextToken(t *testing.T) {
 	input := `
 		// helper
+		# shell-style helper comment
 		[ WWE R D ] QQ R
 		QEW QQW QQ EQE
+		?
 	`
 
 	tests := []struct {
@@ -28,6 +30,7 @@ func TestNextToken(t *testing.T) {
 		{token.CHANT, "QQW"},
 		{token.CHANT, "QQ"},
 		{token.CHANT, "EQE"},
+		{token.ILLEGAL, "?"},
 		{token.EOF, ""},
 	}
 
