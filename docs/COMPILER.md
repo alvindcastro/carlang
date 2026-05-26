@@ -65,4 +65,22 @@ OpMul
 OpPrintChar
 ```
 
+For example:
+
+```carl
+QQQ R D
+QQE R D
+WWE R D
+EEE R D
+```
+
+compiles to:
+
+```txt
+0000 OpPushOne
+0001 OpDup
+0002 OpAdd
+0003 OpPrintChar
+```
+
 The compiler currently targets stack and ASCII-output programs. Interpreter-only features, such as general block conditionals, can be added to bytecode later with jump instructions.
