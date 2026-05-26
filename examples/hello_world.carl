@@ -1,0 +1,57 @@
+// Carlang Hello World
+// Output: Hello, World!
+
+// Core helper combos
+[ WWE R D ] QQ R          // QQ  = add
+[ EEE R D ] EQE R         // EQE = print ASCII character
+[ QQE R D QQ ] EEQ R      // EEQ = double top value
+
+// Powers of two
+[ QQQ R D QQQ R D QQ ] QQQ R  // QQQ = 2
+[ QQQ EEQ ] QQE R             // QQE = 4
+[ QQE EEQ ] QQW R             // QQW = 8
+[ QQW EEQ ] QEQ R             // QEQ = 16
+[ QEQ EEQ ] QEE R             // QEE = 32
+[ QEE EEQ ] QEW R             // QEW = 64
+
+// H = 72 = 64 + 8
+QEW QQW QQ EQE
+
+// e = 101 = 64 + 32 + 4 + 1
+QEW QEE QQ QQE QQ QQQ R D QQ EQE
+
+// l = 108 = 64 + 32 + 8 + 4
+QEW QEE QQ QQW QQ QQE QQ EQE
+
+// l = 108
+QEW QEE QQ QQW QQ QQE QQ EQE
+
+// o = 111 = 64 + 32 + 8 + 4 + 2 + 1
+QEW QEE QQ QQW QQ QQE QQ QQQ QQ QQQ R D QQ EQE
+
+// , = 44 = 32 + 8 + 4
+QEE QQW QQ QQE QQ EQE
+
+// space = 32
+QEE EQE
+
+// W = 87 = 64 + 16 + 4 + 2 + 1
+QEW QEQ QQ QQE QQ QQQ QQ QQQ R D QQ EQE
+
+// o = 111 = 64 + 32 + 8 + 4 + 2 + 1
+QEW QEE QQ QQW QQ QQE QQ QQQ QQ QQQ R D QQ EQE
+
+// r = 114 = 64 + 32 + 16 + 2
+QEW QEE QQ QEQ QQ QQQ QQ EQE
+
+// l = 108 = 64 + 32 + 8 + 4
+QEW QEE QQ QQW QQ QQE QQ EQE
+
+// d = 100 = 64 + 32 + 4
+QEW QEE QQ QQE QQ EQE
+
+// ! = 33 = 32 + 1
+QEE QQQ R D QQ EQE
+
+// newline = 10 = 8 + 2
+QQW QQQ QQ EQE

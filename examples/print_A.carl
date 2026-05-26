@@ -1,0 +1,14 @@
+// Prints A.
+
+[ WWE R D ] QQ R
+[ EEE R D ] EQE R
+[ QQE R D QQ ] EEQ R
+[ QQQ R D QQQ R D QQ ] QQQ R
+[ QQQ EEQ ] QQE R
+[ QQE EEQ ] QQW R
+[ QQW EEQ ] QEQ R
+[ QEQ EEQ ] QEE R
+[ QEE EEQ ] QEW R
+
+// A = 65 = 64 + 1
+QEW QQQ R D QQ EQE

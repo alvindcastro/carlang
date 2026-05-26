@@ -1,0 +1,13 @@
+# Go
+/bin/
+/dist/
+*.test
+*.out
+
+# Carlang bytecode
+*.cbc
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
