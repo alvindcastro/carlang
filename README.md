@@ -1,6 +1,6 @@
 # Carlang
 
-Carlang is an unofficial Invoker-inspired esoteric programming language.
+Carlang is an unofficial Invoker-inspired arcane programming language.
 
 Programs combine **Quas**, **Wex**, and **Exort** into three-orb recipes, invoke those recipes with `R`, and cast from two spell slots with `D` and `F`.
 
@@ -42,6 +42,23 @@ bin/carl repl
 - [Compiler notes](docs/COMPILER.md): bytecode pipeline, compile-time expansion, and VM opcodes.
 - [Project layout](docs/PROJECT.md): package map for the repository.
 - [Status](docs/STATUS.md): implemented features and current compiler limits.
+
+## Project Structure
+
+```txt
+cmd/carl/   # CLI entrypoint
+lexer/      # source tokenizer
+parser/     # parser from tokens to AST
+ast/        # AST node types
+spell/      # spell names and recipe normalization
+evaluator/  # tree-walking interpreter
+compiler/   # AST to bytecode compiler
+code/       # bytecode instruction format and file I/O
+vm/         # bytecode virtual machine
+repl/       # interactive prompt
+examples/   # sample Carlang programs
+docs/       # language and implementation notes
+```
 
 ## License
 
